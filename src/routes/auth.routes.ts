@@ -4,7 +4,7 @@ import { upload } from "../middlewares/upload.middleware";
 
 const router = Router();
 
-router.post("/signin", upload.none(), signin);
+router.post("/signin", signin);
 router.post("/initiate-admin-user", initiateAdmin);
 
 export default router;
